@@ -27,7 +27,7 @@ You should see a window like this
 
 **Endpoints Exposed**
 
-Please refer the postman collection attached.
+Please refer the postman collection attached here (Inhouse_Navigation_Task/inHousenavigation.postman_collection.json).
 
 **1.POST:**
 
