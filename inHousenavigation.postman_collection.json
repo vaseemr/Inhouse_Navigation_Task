@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "5c2f37c8-f6bc-41a6-85eb-4edd75ee4f84",
+		"name": "inHousenavigation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/fetchMS/:msID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/fetchMS/:msID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fetchMS",
+						":msID"
+					],
+					"variable": [
+						{
+							"key": "msID",
+							"value": "3fa85f64-5717-4562-b3fc-2c963f66afa6\t"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/addMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"base_station_id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"reports\":\r\n  [\r\n{\r\n    \"mobile_station_id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"distance\": 0,\r\n    \"timestamp\": \"2023-04-21T10:35:57.564Z\"\r\n},\r\n{\r\n    \"mobile_station_id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"distance\": 0,\r\n    \"timestamp\": \"2023-04-21T10:35:57.564Z\"\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addMS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addMS"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
